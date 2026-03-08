@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 
@@ -7,7 +8,7 @@
 <style>
 
 body{
-font-family: Arial;
+font-family:Arial;
 margin:0;
 background:#f2f2f2;
 }
@@ -39,20 +40,19 @@ padding:30px;
 .card{
 background:white;
 padding:20px;
-margin:20px;
+margin-bottom:25px;
 border-radius:10px;
-box-shadow:0px 5px 10px rgba(0,0,0,0.2);
+box-shadow:0px 0px 10px rgba(0,0,0,0.2);
 }
 
 </style>
-
 </head>
 
 <body>
 
 <header>
 <h1>Tahir BCA Study</h1>
-<p>Learn BCA Subjects with Fun Examples</p>
+<p>BCA Programming Notes & Examples</p>
 </header>
 
 <nav>
@@ -66,13 +66,32 @@ box-shadow:0px 5px 10px rgba(0,0,0,0.2);
 <div class="container">
 
 <div class="card">
+
 <h2>CA117 Data Structure</h2>
 <p>Learn Arrays, Stack, Queue, Linked List with funny examples and diagrams.</p>
+
+<h3>Array</h3>
+
+<p>
+Array ek data structure hai jisme same type ke elements ek line me store hote hain.
+</p>
+
+<pre>
+Index: 0  1  2  3  4
+Array |10|20|30|40|50|
+</pre>
+
+<p><b>Example Code</b></p>
+
+<pre>
+int arr[5] = {10,20,30,40,50};
+</pre>
+
 <h3>Stack</h3>
 
 <p>
-Stack ek data structure hai jo <b>LIFO (Last In First Out)</b> principle par kaam karta hai.
-Matlab jo element last me aata hai wahi sabse pehle nikalta hai.
+Stack ek data structure hai jo <b>LIFO (Last In First Out)</b> rule follow karta hai.
+Jo element last me aata hai wahi sabse pehle nikalta hai.
 </p>
 
 <pre>
@@ -88,33 +107,33 @@ Top ->| 30 |
 <p>
 Example: Plates ka stack. Jo plate sabse upar rakhi hoti hai wahi pehle uthai jaati hai.
 </p>
-</div>
-<h3>Array</h3>
+
+<h3>Queue</h3>
 
 <p>
-Array ek data structure hai jisme same type ke elements ek line me store hote hain.
+Queue ek data structure hai jo <b>FIFO (First In First Out)</b> rule follow karta hai.
+Jo element sabse pehle aata hai wahi sabse pehle nikalta hai.
 </p>
 
 <pre>
-Index: 0   1   2   3   4
-      -------------------
-Array |10 |20 |30 |40 |50|
-      -------------------
+Front -> |10| |20| |30| |40| <- Rear
 </pre>
 
-<p><b>Example Code:</b></p>
+<p>
+Example: Bus line. Jo aadmi line me sabse pehle khada hota hai wahi pehle bus me chadta hai.
+</p>
 
-<pre>
-int arr[5] = {10,20,30,40,50};
-</pre>
-<div class="card">
-<h2>Operating System</h2>
-<p>Understand process, memory, scheduling with simple explanations.</p>
 </div>
 
+
 <div class="card">
-<h2>Machine Learning</h2>
-<p>Learn Python and machine learning concepts step by step.</p>
+
+<h2>Operating System</h2>
+
+<p>
+Operating System computer ka brain hota hai jo hardware aur software ko manage karta hai.
+</p>
+
 </div>
 
 </div>
