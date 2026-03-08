@@ -1,79 +1,13 @@
-
-<!DOCTYPE html>
-<html>
-
-<head>
-<title>Tahir BCA Study</title>
-
-<style>
-
-body{
-font-family:Arial;
-margin:0;
-background:#f2f2f2;
-}
-
-header{
-background:#111;
-color:white;
-text-align:center;
-padding:30px;
-}
-
-nav{
-background:#444;
-text-align:center;
-padding:10px;
-}
-
-nav a{
-color:white;
-margin:15px;
-text-decoration:none;
-font-weight:bold;
-}
-
-.container{
-padding:30px;
-}
-
-.card{
-background:white;
-padding:20px;
-margin-bottom:25px;
-border-radius:10px;
-box-shadow:0px 0px 10px rgba(0,0,0,0.2);
-}
-
-</style>
-</head>
-
-<body>
-
-<header>
-<h1>Tahir BCA Study</h1>
-<p>BCA Programming Notes & Examples</p>
-</header>
-
-<nav>
-<a href="#">Home</a>
-<a href="#">Data Structure</a>
-<a href="#">Operating System</a>
-<a href="#">Machine Learning</a>
-<a href="#">Computer Networks</a>
-</nav>
-
-<div class="container">
-
-<div class="card">
-
-<h2>CA117 Data Structure</h2>
-<p>Learn Arrays, Stack, Queue, Linked List with funny examples and diagrams.</p>
-
-<h3>Array</h3>
+<h2>CA117 Data Structure with C</h2>
 
 <p>
-Array ek data structure hai jisme same type ke elements ek line me store hote hain.
+Data Structure ka matlab hai data ko organize karne ka tarika taaki usko efficiently use kiya ja sake.
+</p>
+
+<h3>1️⃣ Array</h3>
+
+<p>
+Array ek collection hota hai same type ke elements ka jo memory me contiguous location par store hote hain.
 </p>
 
 <pre>
@@ -87,10 +21,27 @@ Array |10|20|30|40|50|
 int arr[5] = {10,20,30,40,50};
 </pre>
 
-<h3>Stack</h3>
+
+<h3>2️⃣ Linked List</h3>
 
 <p>
-Stack ek data structure hai jo <b>LIFO (Last In First Out)</b> rule follow karta hai.
+Linked List ek linear data structure hai jisme elements nodes ke form me store hote hain.
+Har node me data aur next node ka address hota hai.
+</p>
+
+<pre>
+[10 | next] → [20 | next] → [30 | next] → NULL
+</pre>
+
+<p>
+Real life example: Train ke coaches.
+</p>
+
+
+<h3>3️⃣ Stack</h3>
+
+<p>
+Stack ek data structure hai jo <b>LIFO (Last In First Out)</b> principle par kaam karta hai.
 Jo element last me aata hai wahi sabse pehle nikalta hai.
 </p>
 
@@ -105,10 +56,11 @@ Top ->| 30 |
 </pre>
 
 <p>
-Example: Plates ka stack. Jo plate sabse upar rakhi hoti hai wahi pehle uthai jaati hai.
+Example: Plates ka stack.
 </p>
 
-<h3>Queue</h3>
+
+<h3>4️⃣ Queue</h3>
 
 <p>
 Queue ek data structure hai jo <b>FIFO (First In First Out)</b> rule follow karta hai.
@@ -120,23 +72,97 @@ Front -> |10| |20| |30| |40| <- Rear
 </pre>
 
 <p>
-Example: Bus line. Jo aadmi line me sabse pehle khada hota hai wahi pehle bus me chadta hai.
+Example: Bus line.
 </p>
 
-</div>
 
-
-<div class="card">
-
-<h2>Operating System</h2>
+<h3>5️⃣ Tree</h3>
 
 <p>
-Operating System computer ka brain hota hai jo hardware aur software ko manage karta hai.
+Tree ek hierarchical data structure hai jisme nodes parent-child relation me arranged hote hain.
 </p>
 
-</div>
+<pre>
+       A
+      / \
+     B   C
+    / \   \
+   D   E   F
+</pre>
 
-</div>
+<p>
+Example: Family tree.
+</p>
 
-</body>
-</html>
+
+<h3>6️⃣ Graph</h3>
+
+<p>
+Graph ek data structure hai jisme nodes aur edges hote hain jo relationship show karte hain.
+</p>
+
+<pre>
+A ---- B
+|      |
+|      |
+C ---- D
+</pre>
+
+<p>
+Example: Google Maps navigation.
+</p>
+
+
+<h3>7️⃣ Searching</h3>
+
+<p>
+Searching ka matlab hai kisi element ko data structure me find karna.
+</p>
+
+<p><b>Types:</b></p>
+
+<ul>
+<li>Linear Search</li>
+<li>Binary Search</li>
+</ul>
+
+<pre>
+Linear Search Example:
+
+for(i=0;i<n;i++)
+{
+ if(arr[i]==key)
+  return i;
+}
+</pre>
+
+
+<h3>8️⃣ Sorting</h3>
+
+<p>
+Sorting ka matlab hai data ko ascending ya descending order me arrange karna.
+</p>
+
+<p><b>Common Sorting Algorithms:</b></p>
+
+<ul>
+<li>Bubble Sort</li>
+<li>Selection Sort</li>
+<li>Insertion Sort</li>
+<li>Quick Sort</li>
+</ul>
+
+<pre>
+Bubble Sort Example:
+
+for(i=0;i<n;i++)
+{
+ for(j=0;j<n-i-1;j++)
+ {
+  if(arr[j] > arr[j+1])
+  {
+   swap(arr[j],arr[j+1]);
+  }
+ }
+}
+</pre>
